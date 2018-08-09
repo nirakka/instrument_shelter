@@ -1,0 +1,10 @@
+[Unit]
+Description = Detect Rain
+
+[Service]
+ExecStart=/home/pi/.pyenv/shims/python /home/pi/rain/detect_rain.py
+Restart=always
+Type=simple
+[Install]
+WantedBy=multi-user.target
+

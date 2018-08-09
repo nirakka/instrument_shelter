@@ -1,0 +1,12 @@
+[Unit]
+Description=Publish to MQTT
+
+[Service]
+Type=simple
+KillMode=control-group
+ExecStart=/usr/bin/python /home/pi/run.py
+Restart=no
+User=pi
+
+[Install]
+WantedBy=multi-user.target

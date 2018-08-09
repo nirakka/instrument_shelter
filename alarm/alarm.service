@@ -1,0 +1,11 @@
+[Unit]
+Description = Test
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/mpg.py
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
+
